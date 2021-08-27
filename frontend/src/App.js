@@ -34,7 +34,7 @@ var employees = require('./routes/employees');
 var routes = require('./routes');
 var app = express();
 
-app.set('port', process.env.PORT || 4000);
+app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -51,6 +51,6 @@ app.get('/employees/delete/:id', employees.delete);
 app.get('/employees/edit/:id', employees.edit);
 app.post('/employees/edit/:id', employees.update);
 
-app.listen(4000, function () {
+app.listen(3000, function () {
     console.log('Server is running.. on Port 4000');
 });
