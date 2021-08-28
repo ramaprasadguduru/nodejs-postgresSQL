@@ -2,8 +2,8 @@ const express = require('express');
 const bodyParser = require("body-parser");
 const path = require('path');
 
-var employees = require('./routes/employees');
-var routes = require('./routes');
+//var employees = require('./routes/employees');
+//var routes = require('./routes');
 var app = express();
 
 app.set('port', process.env.PORT || 3000);
