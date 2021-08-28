@@ -1,8 +1,6 @@
 <%- include ../layouts/header.ejs %>
 <div class="page-data">
-    <div class="data-btn">
-        <button onClick="addUser();">+ Add</button>
-    </div>
+
     <div class="data-table">
         <table>
             <tr>
@@ -11,8 +9,6 @@
                 <th>Job</th>
                 <th>Department</th>
                 <th>Salary</th>
-                <th>Hire Date</th>
-                <th width="120px">Action</th>
             </tr>
 
             <% if(data.length){
@@ -25,11 +21,6 @@
                 <td><%=data[i].job%></td>
                 <td><%=data[i].department%></td>
                 <td><%=data[i].salary%></td>
-                <td><%=data[i].hire_date%></td>
-                <td>
-                    <a class="a-inside edit" href="../employees/edit/<%=data[i].id%>">Edit</a>
-                    <a class="a-inside delete" href="../employees/delete/<%=data[i].id%>">Delete</a>
-                </td>
             </tr>
             <% }
             }else{ %>
