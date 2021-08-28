@@ -17,11 +17,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', routes.index);
 app.get('/employees', employees.list);
-app.get('/employees/add', employees.add);
-app.post('/employees/add', employees.save);
-app.get('/employees/delete/:id', employees.delete);
-app.get('/employees/edit/:id', employees.edit);
-app.post('/employees/edit/:id', employees.update);
+
 
 app.listen(3000, function () {
     console.log('Server is running.. on Port 3000');
